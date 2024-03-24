@@ -2,8 +2,7 @@
     "name": "eldahar/sonarqube-api-bundle",
     "description": "Sonarqube API Symfony bundle",
     "type": "library",
-    "minimum-stability": "dev",
-    "version": "1.0.2",
+    "version": "dev-1.0",
     "license": [
         "GPL-3.0-or-later"
     ],
@@ -28,6 +27,6 @@
         "symfony/property-access": "7.0.*",
         "symfony/property-info": "7.0.*",
         "symfony/runtime": "7.0.*",
-        "eldahar/sonarqube-api": ">=1.0"
+        "eldahar/sonarqube-api": ">=1.0-@dev"
     }
 }
