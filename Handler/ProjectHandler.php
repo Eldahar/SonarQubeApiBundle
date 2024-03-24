@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Eldahar\SonarQubeAPIBundle\Handler;
 
-use Eldahar\SonarQubeAPI\DTO\ProjectComponent;
-use Eldahar\SonarQubeAPI\DTO\ProjectSearch;
 use Eldahar\SonarQubeAPI\Service\ProjectService;
+use Eldahar\SonarQubeAPIBundle\DTO\ProjectComponent;
+use Eldahar\SonarQubeAPIBundle\DTO\ProjectSearch;
 use Symfony\Component\Serializer\SerializerInterface;
 
 final class ProjectHandler

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Eldahar\SonarQubeAPIBundle\Handler;
 
-use Eldahar\SonarQubeAPI\DTO\IssueSearch;
 use Eldahar\SonarQubeAPI\Service\IssueService;
+use Eldahar\SonarQubeAPIBundle\DTO\IssueSearch;
 use Eldahar\SonarQubeAPIBundle\DTO\IssuesWithComponents;
 use Symfony\Component\Serializer\SerializerInterface;
 
