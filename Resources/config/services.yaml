@@ -1,4 +1,6 @@
 parameters:
+  env(SONARQUBE_URI): "http://example.com"
+  env(SONARQUBE_TOKEN): "abcd"
 
 services:
   _defaults:
@@ -18,3 +20,13 @@ services:
   Eldahar\SonarQubeAPI\Service\ProjectService:
     arguments:
       - '@guzzle.client.sonarqube'
+
+  Eldahar\SonarQubeAPIBundle\Factory\SonarQubeClientFactory: ~
+
+  guzzle.client.sonarqube:
+    class: GuzzleHttp\Client
+    factory: '@Eldahar\SonarQubeAPIBundle\Factory\SonarQubeClientFactory'
+    arguments:
+      $config:
+        base_uri: '%env(SONARQUBE_URI)%'
+      $apiKey: '%env(SONARQUBE_TOKEN)%'
