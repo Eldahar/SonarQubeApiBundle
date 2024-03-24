@@ -1,0 +1,20 @@
+parameters:
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Eldahar\SonarQubeAPIBundle\:
+    resource: '../../'
+    exclude:
+      - '../../DependencyInjection/'
+      - '../../Entity/'
+
+  Eldahar\SonarQubeAPI\Service\IssueService:
+    arguments:
+      - '@guzzle.client.sonarqube'
+
+  Eldahar\SonarQubeAPI\Service\ProjectService:
+    arguments:
+      - '@guzzle.client.sonarqube'
