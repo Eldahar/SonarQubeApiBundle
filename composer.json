@@ -26,6 +26,7 @@
         "symfony/framework-bundle": "7.0.*",
         "symfony/property-access": "7.0.*",
         "symfony/property-info": "7.0.*",
-        "symfony/runtime": "7.0.*"
+        "symfony/runtime": "7.0.*",
+        "eldahar/sonarqube-api": ">=1.0"
     }
 }
